@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="box-geral">
+
+            <div id="radio-login-cadastro">
+                <h2 id="login">LOGIN</h2>
+                <h2 id="cadastro" class="login-active">CADASTRO</h2>
+            </div>
+
+            <div class="box-cadastro" id="box-cadastro">
+
+                <form action="app.php" method="POST">
+                    <div class="box-label">
+                        <input type="text" class="inputUser" name="nome" required>
+                        <label for="" class="label-login">Nome completo</label>
+                    </div>
+
+                    <div class="box-label">
+                        <input type="text" class="inputUser" name="user" required>
+                        <label for="" class="label-login">Nome do usúario</label>
+                    </div>
+
+                    <div class="box-label">
+                        <input type="text" class="inputUser" name="email" required>
+                        <label for="" class="label-login">Email</label>
+                    </div>
+
+                    <div class="box-label senha">
+                        <input type="password" class="inputUser" name="senha" id="inputSenha" required>
+                        <img src="assets/eye.svg" alt="" id="togglePass">
+                        <label for="" class="label-login">Senha</label>
+                    </div>
+                    
+                    <!-- <div class="box-label box-checkbox">
+                        <input type="checkbox">
+                        <label for="">Concordo com os termos de uso de ....</label>
+                    </div> -->
+
+                    <input type="submit" id="cadastrar" value="Cadastrar" name="submit">
+                </form>
+            </div>
+
+            <div class="box-login" id="box-login">
+
+                <form action="index.php" method="POST">
+                    <div class="box-label">
+                        <input type="text" class="inputUser" required>
+                        <label for="" class="label-login">Email</label>
+                    </div>
+
+                    <div class="box-label senha">
+                        <input type="password" class="inputUser" id="inputSenha2" required> 
+                        <img src="assets/eye.svg" alt="" id="togglePass2">
+                        <label for="" class="label-login">Senha</label>
+                    </div>
+
+                    <!-- <input type="submit" id="entrar" value="Entrar" name="submit"> -->
+                    
+                </form>
+            </div>
+        </div>
+
+        <div id="logo-da-empresa">
+            <img src="imagens/logo-empresa.png" alt="">
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
